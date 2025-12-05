@@ -10,11 +10,11 @@ class UserSeeder extends Seeder
     public function run(): void
     {
         User::create([
-            'name' => 'User',
-            'email' => 'manekapiyumawali@gmail.com',
+            'name' => 'Admin',
+            'email' => 'admin@gmail.com',
             'password' => bcrypt('password'), 
-            'member_id' => 'M0001',
-            'phone' => '0771234567',
+            'member_id' => 'M0002',
+            'phone' => '0771234589',
         ]);
     }
 }

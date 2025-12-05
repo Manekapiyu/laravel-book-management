@@ -130,9 +130,9 @@
                 </select>
             </div>
 
-            <div class="col-md-4 d-grid">
+            <div class="col-md-4 d-grid align-self-end">
                 <label class="form-label">&nbsp;</label>
-                <button class="btn btn-outline-success ">Return Book</button>
+                <button class="btn btn-outline-success">Return Book</button>
             </div>
         </form>
     </div>
