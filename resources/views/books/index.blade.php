@@ -6,7 +6,7 @@
     <a href="{{ route('books.create') }}" class="btn btn-primary">+ Add New Book</a>
 </div>
 
-<!-- Filter -->
+
 <form method="GET" action="{{ route('books.index') }}" class="row g-2 mb-4">
     <div class="col-md-3">
         <select name="category" class="form-select" onchange="this.form.submit()">
@@ -20,7 +20,7 @@
     </div>
 </form>
 
-<!-- Books Table -->
+
 <div class="card shadow-sm">
     <div class="card-body p-0">
         <table class="table table-striped mb-0">
@@ -79,7 +79,7 @@
 
 <hr class="my-5">
 
-<!-- ISSUE BOOK FORM -->
+
 <h3>Issue a Book</h3>
 <div class="card shadow-sm mb-4">
     <div class="card-body">
@@ -112,7 +112,6 @@
     </div>
 </div>
 
-<!-- RETURN FORM -->
 <h3> Return a Book</h3>
 <div class="card shadow-sm mb-4">
     <div class="card-body">
@@ -130,9 +129,9 @@
                 </select>
             </div>
 
-            <div class="col-md-4 d-grid">
+            <div class="col-md-4 d-grid align-self-end">
                 <label class="form-label">&nbsp;</label>
-                <button class="btn btn-outline-success ">Return Book</button>
+                <button class="btn btn-outline-success">Return Book</button>
             </div>
         </form>
     </div>
