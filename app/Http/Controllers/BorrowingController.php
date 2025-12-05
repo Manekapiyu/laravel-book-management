@@ -53,8 +53,10 @@ class BorrowingController extends Controller
         DB::transaction(function () use ($validated) {
             $borrow = Borrowing::lockForUpdate()->find($validated['borrowing_id']);
 
-            if (!$borrow) abort(404, 'Borrowing not found');
-            if ($borrow->status === 'returned') abort(400, 'Already returned');
+            if (!$borrow)
+                abort(404, 'Borrowing not found');
+            if ($borrow->status === 'returned')
+                abort(400, 'Already returned');
 
             $book = Book::lockForUpdate()->find($borrow->book_id);
             $book->increment('stock', 1);

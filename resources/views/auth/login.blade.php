@@ -2,80 +2,68 @@
 
 @section('content')
 
-<link href="{{ asset('css/register.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/register.css') }}" rel="stylesheet">
 
-<div class="row justify-content-center">
-    <div class="col-md-6">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
 
-        <div class="container d-flex justify-content-center register-container">
-            <div class="register-card text-center">
+            <div class="container d-flex justify-content-center register-container">
+                <div class="register-card text-center">
 
-                <img src="{{ asset('images/book-logo.png') }}" 
-                     alt="Book Logo" 
-                     style="height:70px; width:auto; margin-bottom:10px;">
+                    <img src="{{ asset('images/book-logo.png') }}" alt="Book Logo"
+                        style="height:70px; width:auto; margin-bottom:10px;">
 
-                <h3 class="mb-4">LOGIN</h3>
+                    <h3 class="mb-4">LOGIN</h3>
 
-                <!-- Session Status -->
-                @if (session('status'))
-                    <div class="alert alert-success mb-3">
-                        {{ session('status') }}
-                    </div>
-                @endif
+                    @if (session('status'))
+                        <div class="alert alert-success mb-3">
+                            {{ session('status') }}
+                        </div>
+                    @endif
 
-                <form method="POST" action="{{ route('login') }}">
-                    @csrf
+                    <form method="POST" action="{{ route('login') }}">
+                        @csrf
 
-                    <!-- Email -->
-                    <div class="mb-3 text-start">
-                        <label for="email" class="form-label">Email</label>
-                        <input id="email"
-                               type="email"
-                               class="form-control @error('email') is-invalid @enderror"
-                               name="email"
-                               value="{{ old('email') }}"
-                               required autofocus>
-                        @error('email')
-                            <div class="invalid-feedback">{{ $message }}</div>
-                        @enderror
-                    </div>
+                        <!-- Email -->
+                        <div class="mb-3 text-start">
+                            <label for="email" class="form-label">Email</label>
+                            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror"
+                                name="email" value="{{ old('email') }}" required autofocus>
+                            @error('email')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror
+                        </div>
 
-                    <!-- Password -->
-                    <div class="mb-3 text-start">
-                        <label for="password" class="form-label">Password</label>
-                        <input id="password"
-                               type="password"
-                               class="form-control @error('password') is-invalid @enderror"
-                               name="password"
-                               required>
-                        @error('password')
-                            <div class="invalid-feedback">{{ $message }}</div>
-                        @enderror
-                    </div>
+                        <div class="mb-3 text-start">
+                            <label for="password" class="form-label">Password</label>
+                            <input id="password" type="password"
+                                class="form-control @error('password') is-invalid @enderror" name="password" required>
+                            @error('password')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror
+                        </div>
 
-                    <!-- Remember Me -->
-                    <div class="mb-3 text-start">
-                        <label for="remember_me" class="form-check-label">
-                            <input id="remember_me" type="checkbox" class="form-check-input" name="remember">
-                            Remember Me
-                        </label>
-                    </div>
+                        <div class="mb-3 text-start">
+                            <label for="remember_me" class="form-check-label">
+                                <input id="remember_me" type="checkbox" class="form-check-input" name="remember">
+                                Remember Me
+                            </label>
+                        </div>
 
-                    <!-- Buttons -->
-                    <div class="d-flex justify-content-between align-items-center">
-                        <a href="{{ route('register') }}">Create an account</a>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="{{ route('register') }}">Create an account</a>
 
-                        <button type="submit" class="btn btn-primary">
-                            Login Now
-                        </button>
-                    </div>
+                            <button type="submit" class="btn btn-primary">
+                                Login Now
+                            </button>
+                        </div>
 
-                </form>
+                    </form>
 
+                </div>
             </div>
-        </div>
 
+        </div>
     </div>
-</div>
 
 @endsection

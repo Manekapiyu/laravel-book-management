@@ -8,8 +8,6 @@ use Illuminate\Http\Request;
 
 class BookController extends Controller
 {
-    // Optionally add auth middleware if you want:
-    // public function __construct() { $this->middleware('auth'); }
 
     public function index(Request $request)
     {
