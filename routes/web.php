@@ -8,6 +8,6 @@ Route::get('/', [BookController::class, 'index'])->name('books.index');
 
 Route::resource('books', BookController::class)->except(['show']);
 
-// Borrowing endpoints (form submissions)
+// Borrowing endpoints 
 Route::post('/borrow/issue', [BorrowingController::class, 'issue'])->name('borrow.issue');
 Route::post('/borrow/return', [BorrowingController::class, 'returnBook'])->name('borrow.return');

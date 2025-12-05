@@ -1,12 +1,28 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    padding: 20px;
+    background-color: #f6fbfd;
+}
+
+.custom-navbar {
+    background-color: #01254c ;
+     padding: 10px 10px;
+    color: #fff;
+    
+}
+
+.navbar-container{
+    margin-bottom: 5px;
+    margin-top: 5px;
+   
+ 
+
 }
 
 .container {
     max-width: 1000px;
     margin: 0 auto;
+
 }
 
 table {
@@ -56,4 +72,14 @@ label {
 
 h2, h3 {
     margin-top: 20px;
+    color:#01254c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.table-header-blue,
+.table-header-blue th {
+  background-color: #01346b;
+  color: #ffffff ;
+  border-color: rgba(244, 244, 244, 0.374);
+  
 }
