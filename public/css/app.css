@@ -1,0 +1,85 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f6fbfd;
+}
+
+.custom-navbar {
+    background-color: #01254c ;
+     padding: 10px 10px;
+    color: #fff;
+    
+}
+
+.navbar-container{
+    margin-bottom: 5px;
+    margin-top: 5px;
+   
+ 
+
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+form.inline {
+    display: inline-block;
+}
+
+button {
+    cursor: pointer;
+    padding: 6px 12px;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+input, select {
+    padding: 6px;
+    margin: 5px 0;
+    width: 250px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+h2, h3 {
+    margin-top: 20px;
+    color:#01254c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.table-header-blue,
+.table-header-blue th {
+  background-color: #01346b;
+  color: #ffffff ;
+  border-color: rgba(244, 244, 244, 0.374);
+  
+}
